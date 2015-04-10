@@ -1,4 +1,4 @@
-## TRAIANGLES
+## TRIANGLES
 
 ###### APRIL 10, 2015
 
