@@ -15,30 +15,27 @@ var triangle = function(a, b, c) {
   if (sort[0] + sort[1] > sort[2]) {
 
   if ((sort[0] != sort[1]) && (sort[0] != sort[2]) && (sort[1] != sort[2])
+
   && (squaRes[0] + squaRes[1] != squaRes[2])) {
-  return "SCALENE";
+      return "SCALENE";
   }
-
-  if ((sort[0] === sort[1]) && (sort[0] === sort[2]) && (sort[1] === sort[2])) {
-  return "EQUILATERAL";
-  }
-
-
   if ((sort[0] === sort[1]) && (sort[0] != sort[2])) {
-  return "ISOSCELES";
+      return "ISOSCELES";
   }
-
+  if ((sort[0] === sort[1]) && (sort[0] === sort[2]) && (sort[1] === sort[2])) {
+      return "EQUILATERAL";
+  }
 
   if (squaRes[0] + squaRes[1] === squaRes[2]) {
-  return "RIGHT";
+    return "YES";
   }
 
   } else {
-  return "this not a triangle";
+  return " NOT TRIANGLE";
   }
 
 };
-  $(document).ready(function() {
+  $(function() {
   $('form#triangle').submit(function(event) {
 
     var a = $('input#numberA').val();
@@ -46,7 +43,7 @@ var triangle = function(a, b, c) {
     var c = $('input#numberC').val();
     var input_result = triangle(a, b, c);
 
-    $('#display').text(input_result);
+    $('#type').text(input_result);
     $('#result').show()
     event.preventDefault();
   });
