@@ -3,52 +3,38 @@
 
 <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <title>triangle</title>
 </head>
 <body>
 
-     <div id ="header">
-       <h1>triangle</h1>
-     </div>
+
+
+
     <div class="container">
-
-
-        <form>
-        <div id="numberA" class="form-group">
+      <h1>triangle</h1>
+        <form id = "triangle">
+        <div class="form-group">
             <label for="numberA"> Enter A number</label>
-            <input class="form-control" type="number" name="numberA" value="" id = "numberA" required>
-
+            <input class="form-control" type="text" name="numberA" id="numberA" required>
         </div>
-        <div id="numberB" class="form-group">
+        <div class="form-group">
             <label for="numberB"> Enter B number</label>
-            <input class="form-control" type="number" name="numberB" value="" id = "numberB" required>
-
+            <input class="form-control" type="text" name="numberB" id="numberB" required>
         </div>
-        <div id="numberC" class="form-group">
+        <div class="form-group">
             <label for="numberC"> Enter C number</label>
-            <input class="form-control" type="number" name="numberC" value="" id = "numberC" required>
+            <input class="form-control" type="text" name="numberC" id="numberC" required>
         </div>
-          <button  type ="submit" class="btn btn-danger"name="button">Submit</button>
+       <button  type ="submit" class="btn btn-danger"name="button">Submit</button>
         </form>
 
-        <div id="result">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <p>Here are your list</p>
-                </div>
-                <div class="col-xs-6 col-md-4">
-                    <p></p><span class="point"></span> </div>
-            </div>
+        <div id="type">
+                    <p <span id ='result'></span>Here are your list</p>
+
         </div>
     </div>
 </body>
